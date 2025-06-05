@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+body      { font-family: system-ui, sans-serif; margin: 0; }
+nav       { display: flex; gap: 1rem; padding: 1rem; background: #f1f1f1; }
+nav a     { text-decoration: none; color: #333; }
+nav a.active { font-weight: bold; }
+main      { padding: 2rem; }
+
