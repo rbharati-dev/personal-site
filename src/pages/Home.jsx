@@ -2,8 +2,8 @@
 export default function Home() {
   return (
     <>
-      <h1>Welcome!</h1>
-      <p>This is my personal site built with React&nbsp;+&nbsp;Vite.</p>
+      <h1>Hello! My name is Roman Bharati!</h1>
+      <p>This is my personal website with a selection of some of my most interesting projects.</p>
     </>
   );
 }
