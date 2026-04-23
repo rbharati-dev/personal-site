@@ -1,5 +1,7 @@
 # Roman Bharati - Personal Portfolio
 
+https://rbharati-dev.github.io/personal-site/
+
 A modern, finance-themed personal portfolio website for Roman Bharati.
 
 ## Pages
