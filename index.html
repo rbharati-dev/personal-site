@@ -12,7 +12,7 @@
             <div class="nav-container">
                 <img src="photo.png" alt="Roman Bharati" class="nav-photo">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="essays.html">Essays</a></li>
@@ -22,16 +22,20 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="top">
             <div class="hero-visual">
                 <!-- Globe removed from here -->
             </div>
             <div class="hero-content">
-                <h2>ROMAN BHARATI</h2>
+                <h2 class="hero-name">ROMAN BHARATI</h2>
                 <p class="university">University of Waterloo</p>
                 <p class="student">Management Engineering Student</p>
                 <div class="contact">
                     <a href="mailto:roman.bharati@uwaterloo.ca">roman.bharati@uwaterloo.ca</a> | <a href="https://linkedin.com/in/romanbharati" target="_blank">LinkedIn</a> | <span>+1 (647)-701-6297</span>
+                </div>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="experience.html">View Experience</a>
+                    <a class="btn btn-secondary" href="https://linkedin.com/in/romanbharati" target="_blank">Contact / LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -39,36 +43,194 @@
         <section class="hero-intro">
             <div class="globe-container">
                 <svg width="300" height="300" viewBox="0 0 300 300">
-                    <circle cx="150" cy="150" r="135" fill="#1a365d" stroke="#ffd700" stroke-width="3"/>
+                    <circle cx="150" cy="150" r="135" fill="#0A1F44" stroke="#D4AF37" stroke-width="3"/>
                     <!-- Globe grid -->
-                    <ellipse cx="150" cy="150" rx="135" ry="135" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <ellipse cx="150" cy="150" rx="135" ry="95" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <ellipse cx="150" cy="150" rx="135" ry="55" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <ellipse cx="150" cy="150" rx="90" ry="135" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <ellipse cx="150" cy="150" rx="55" ry="135" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <line x1="150" y1="15" x2="150" y2="285" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <line x1="15" y1="150" x2="285" y2="150" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <line x1="75" y1="37.5" x2="225" y2="262.5" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
-                    <line x1="225" y1="37.5" x2="75" y2="262.5" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
+                    <ellipse cx="150" cy="150" rx="135" ry="135" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <ellipse cx="150" cy="150" rx="135" ry="95" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <ellipse cx="150" cy="150" rx="135" ry="55" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <ellipse cx="150" cy="150" rx="90" ry="135" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <ellipse cx="150" cy="150" rx="55" ry="135" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <line x1="150" y1="15" x2="150" y2="285" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <line x1="15" y1="150" x2="285" y2="150" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <line x1="75" y1="37.5" x2="225" y2="262.5" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
+                    <line x1="225" y1="37.5" x2="75" y2="262.5" stroke="#D4AF37" stroke-width="1" opacity="0.7"/>
                     <!-- Network arcs -->
-                    <path d="M40 160 C70 110 115 110 150 140" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.65"/>
-                    <path d="M260 160 C230 210 185 210 150 180" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.65"/>
-                    <path d="M100 45 C130 65 170 65 200 45" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.65"/>
-                    <path d="M100 255 C130 235 170 235 200 255" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.65"/>
-                    <circle cx="95" cy="115" r="4" fill="#ffd700" opacity="0.9"/>
-                    <circle cx="205" cy="105" r="4" fill="#ffd700" opacity="0.9"/>
-                    <circle cx="160" cy="210" r="4" fill="#ffd700" opacity="0.9"/>
-                    <circle cx="120" cy="180" r="3" fill="#ffd700" opacity="0.75"/>
-                    <circle cx="190" cy="150" r="3" fill="#ffd700" opacity="0.75"/>
+                    <path d="M40 160 C70 110 115 110 150 140" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.65"/>
+                    <path d="M260 160 C230 210 185 210 150 180" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.65"/>
+                    <path d="M100 45 C130 65 170 65 200 45" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.65"/>
+                    <path d="M100 255 C130 235 170 235 200 255" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.65"/>
+                    <circle cx="95" cy="115" r="4" fill="#D4AF37" opacity="0.9"/>
+                    <circle cx="205" cy="105" r="4" fill="#D4AF37" opacity="0.9"/>
+                    <circle cx="160" cy="210" r="4" fill="#D4AF37" opacity="0.9"/>
+                    <circle cx="120" cy="180" r="3" fill="#D4AF37" opacity="0.75"/>
+                    <circle cx="190" cy="150" r="3" fill="#D4AF37" opacity="0.75"/>
                 </svg>
             </div>
             <div class="content">
-                <p class="bio">An engineering student skilled in software and business strategy, with a strong focus on fintech, payment systems, and international transaction design. I work at the intersection of finance, regulation, and distributed systems to build infrastructure that can operate across borders and currencies.</p>
-                <ul class="bio-list">
-                    <li>Systems-thinking approach to product, platform, and policy design.</li>
-                    <li>Driven by the interplay of law, geopolitics, and global finance.</li>
-                    <li>Building transactional systems that are reliable, auditable, and scalable.</li>
-                </ul>
+                <p class="lead lead-animated" data-text="FINANCIAL OPERATIONS PROFESSIONAL" aria-label="Financial Operations Professional"></p>
+            </div>
+        </section>
+
+        <section class="section" id="highlights">
+            <div class="section-inner">
+                <div class="section-header">
+                    <p class="kicker">Financial operations focus</p>
+                    <h2>Operating at scale</h2>
+                </div>
+                <div class="capability-list">
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Process & controls</p>
+                            <p class="capability-sub">Reduce friction while keeping auditability intact.</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Reconciliations, break resolution, exception handling</li>
+                                <li>Control mapping, SOPs, and operational readiness</li>
+                                <li>Cycle-time reduction through workflow redesign</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Fund administration & reporting</p>
+                            <p class="capability-sub">Clean data in, clean reporting out.</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>NAV-adjacent workflows, data QA, and reporting hygiene</li>
+                                <li>Data lineage and traceability for review and audit</li>
+                                <li>Standardized templates and repeatable monthly close steps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Business analysis & product ops</p>
+                            <p class="capability-sub">Translate messy problems into shipped improvements.</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Requirements, stakeholder alignment, and KPI definition</li>
+                                <li>Backlog shaping, UAT support, and rollout planning</li>
+                                <li>Automation and tooling where it meaningfully reduces manual work</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Systems & automation</p>
+                            <p class="capability-sub">Reliability first for finance-critical pipelines.</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Ingestion pipelines, monitoring, and operational alerts</li>
+                                <li>IaC / CI/CD practices to reduce change risk</li>
+                                <li>Documentation that enables handoffs and continuity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="selected-experience">
+            <div class="section-inner">
+                <div class="section-header">
+                    <p class="kicker">Selected experience</p>
+                    <h2>Highlights</h2>
+                </div>
+                <div class="capability-list">
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Trade ingestion + risk automation</p>
+                            <p class="capability-sub">CI Financial • Winter 2025</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Engineered ingestion pipelines supporting a $6B portfolio optimizer.</li>
+                                <li>Automated stress testing workflows for faster risk reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Cloud ops for high-volume processing</p>
+                            <p class="capability-sub">CI Financial • Spring 2024</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Managed infrastructure for trade processing with IaC and CI/CD practices.</li>
+                                <li>Improved reliability with clearer deployment and monitoring workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capability">
+                        <div class="capability-left">
+                            <p class="capability-title">Fintech business planning</p>
+                            <p class="capability-sub">Kilgour Williams Capital • Fall 2025</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Built a go-to-market plan for a Merchant Cash Advance product in Canada.</li>
+                                <li>Delivered segmentation and competitive analysis for SME acquisition.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-actions">
+                    <a class="btn btn-primary" href="experience.html">See full experience</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="selected-work">
+            <div class="section-inner">
+                <div class="section-header">
+                    <p class="kicker">Selected work</p>
+                    <h2>Projects</h2>
+                </div>
+                <div class="capability-list">
+                    <a class="capability capability-link" href="projects.html">
+                        <div class="capability-left">
+                            <p class="capability-title">EngRoute</p>
+                            <p class="capability-sub">Full-stack · Product</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Degree planning web app with transcript parsing and an interactive course map.</li>
+                                <li>Outcome: automated requirement checks and planning flow.</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a class="capability capability-link" href="projects.html">
+                        <div class="capability-left">
+                            <p class="capability-title">Credit Card Fraud Detector</p>
+                            <p class="capability-sub">Machine learning · Fraud</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Fraud detection models evaluated using PR-AUC, recall, and F1.</li>
+                                <li>Outcome: prioritized detection rate over raw accuracy.</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a class="capability capability-link" href="projects.html">
+                        <div class="capability-left">
+                            <p class="capability-title">Financial Planning Tool</p>
+                            <p class="capability-sub">Finance · Automation</p>
+                        </div>
+                        <div class="capability-right">
+                            <ul>
+                                <li>Cash-flow and portfolio tracking with automation for clarity and repeatability.</li>
+                                <li>Outcome: faster updates and cleaner financial visibility.</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-actions">
+                    <a class="btn btn-secondary" href="projects.html">View all projects</a>
+                </div>
             </div>
         </section>
     </main>
